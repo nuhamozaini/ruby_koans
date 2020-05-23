@@ -1,4 +1,4 @@
-require 'edgecase'
+require_relative  'edgecase'
 
 # Project: Create a Proxy Class
 #

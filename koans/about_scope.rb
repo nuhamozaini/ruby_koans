@@ -1,4 +1,4 @@
-require 'edgecase'
+require_relative  'edgecase'
 
 class AboutScope < EdgeCase::Koan
   module Jims

@@ -1,4 +1,4 @@
-require 'edgecase'
+require_relative  'edgecase'
 
 class AboutHashes < EdgeCase::Koan
   def test_creating_hashes

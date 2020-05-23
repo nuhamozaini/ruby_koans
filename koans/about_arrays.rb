@@ -1,4 +1,4 @@
-require 'edgecase'
+require_relative  'edgecase'
 
 class AboutArrays < EdgeCase::Koan
   def test_creating_arrays

@@ -1,4 +1,4 @@
-require 'edgecase'
+require_relative  'edgecase'
 
 def my_global_method(a,b)
   a + b

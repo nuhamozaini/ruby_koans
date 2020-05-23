@@ -1,4 +1,4 @@
-require 'edgecase'
+require_relative  'edgecase'
 
 class AboutUsingBlocks < EdgeCase::Koan
 

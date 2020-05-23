@@ -1,4 +1,4 @@
-require 'edgecase'
+require_relative  'edgecase'
 
 class AboutClassMethods < EdgeCase::Koan
   class Dog

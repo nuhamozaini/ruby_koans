@@ -1,4 +1,4 @@
-require 'edgecase'
+require_relative  'edgecase'
 
 class AboutNil < EdgeCase::Koan
   def test_nil_is_an_object
