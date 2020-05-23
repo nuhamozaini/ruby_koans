@@ -18,21 +18,21 @@ class AboutNil < EdgeCase::Koan
     #  in a sandbox and catching the error class into the exception
     #  variable.  
     #
-    exception = assert_raise(___) do
-      nil.some_method_nil_doesnt_know_about
+    exception = assert_raise('NoMethodError (undefined method `to_sym\' for nil:NilClass)') do
+      nil.to_sym
     end
     
     # 
     #  What is the error message itself? What substring or pattern could 
     #  you test against in order to have a good idea what the string is?
     #  
-    assert_match /__/, exception.message
+    assert_match /[a-zA-Z]+' for nil:NilClass/, exception.message
   end
 
   def test_nil_has_a_few_methods_defined_on_it
-    assert_equal __, nil.nil?
-    assert_equal __, nil.to_s
-    assert_equal __, nil.inspect
+    assert_equal true, nil.nil?
+    assert_equal '', nil.to_s
+    assert_equal "nil", nil.inspect
 
     # THINK ABOUT IT:
     #
